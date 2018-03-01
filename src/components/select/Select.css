@@ -1,0 +1,8 @@
+.dropdown {
+	height: 35px;
+    padding: 5px 20px;
+}
+
+.dropdown option {
+	height: 35px;
+}
