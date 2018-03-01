@@ -8,7 +8,7 @@ const TYPES = {
 	JSON: 'json'
 };
 
-export default class Form extends Component {
+class Form extends Component {
 	state = {
 		type: TYPES.JSON
 	}
@@ -38,3 +38,5 @@ export default class Form extends Component {
 		);
 	}
 }
+
+export default Form;
