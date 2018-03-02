@@ -2,8 +2,8 @@ import { h, Component } from 'preact';
 import './App.css';
 
 import Form from '../../containers/form/Form';
-import { ReactHighlight } from '../../components/highlight/Highlight';
-import { getResponse} from '../../utiles/ApiUtils';
+import { Highligth } from '../../components/highlight/Highlight';
+import { getResponse } from '../../utiles/ApiUtils';
 
 const STATE = {
 	LOADING: 'loading',
@@ -25,13 +25,12 @@ export default class App extends Component {
 		} catch (error) {
 			this.setState({ state: STATE.ERROR });
 		}
-		
 	}
 
 	getContentView() {
 		switch (this.state.state) {
 			case STATE.RESPONSE:
-				return <ReactHighlight content={this.state.response} />;
+				return <Highligth content={this.state.response} />;
 			case STATE.LOADING:
 				return 'Loading...';
 			case STATE.ERROR:
