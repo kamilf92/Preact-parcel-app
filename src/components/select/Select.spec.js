@@ -1,6 +1,6 @@
 import { h } from 'preact';
 import { shallow } from 'preact-render-spy';
-import { Select } from './Select';
+import Select from './Select';
 
 describe('components/select', () => {
 

@@ -4,13 +4,7 @@ import { expect } from 'chai';
 describe('components/app', () => {
 	beforeEach(() => {
 		global.fetch = jest.fn().mockImplementation(() => {
-			let p = new Promise((resolve, ) => {
-				resolve({
-					ok: true,
-					text: () => 'response'
-				});
-			});
-	
+			const p = new Promise((resolve) => resolve({ok: true, text: () => 'response'}));
 			return p;
 		});
 	

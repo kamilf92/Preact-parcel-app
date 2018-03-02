@@ -2,7 +2,7 @@ import { h, Component } from 'preact';
 import './App.css';
 
 import Form from '../../containers/form/Form';
-import { Highligth } from '../../components/highlight/Highlight';
+import Highligth from '../../components/highlight/Highlight';
 import { getResponse } from '../../utiles/ApiUtils';
 
 const STATE = {

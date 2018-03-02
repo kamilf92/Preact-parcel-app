@@ -18,4 +18,4 @@ const Button = ({ text, theme = ButtonThemes.DEFAULT, size = ButtonSizes.MEDIUM 
 	);
 };
 
-export {Button, ButtonThemes, ButtonSizes};
+export default Button;

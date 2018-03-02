@@ -11,5 +11,5 @@ const Select = ({ handleChange, value, options }) => {
 	);
 };
 
-export { Select };
+export default Select;
  

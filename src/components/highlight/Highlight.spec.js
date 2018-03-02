@@ -1,6 +1,6 @@
 import { h, render } from 'preact';
 import { expect } from 'chai';
-import { Highlight } from './Highlight';
+import Highlight from './Highlight';
 
 describe('components/highlight', () => {
 	let scratch;

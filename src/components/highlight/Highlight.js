@@ -8,4 +8,4 @@ const Highligth = ({ content }) => {
 	);
 };
 
-export { Highligth };
+export default Highligth;

@@ -1,14 +1,14 @@
 import { h, Component } from 'preact';
 import './Form.css';
-import { Select } from '../../components/select/Select';
-import { Button } from '../../components/button/Button';
+import Select from '../../components/select/Select';
+import Button from '../../components/button/Button';
 
 const TYPES = {
 	XML: 'xml',
 	JSON: 'json'
 };
 
-class Form extends Component {
+export default class Form extends Component {
 	state = {
 		type: TYPES.JSON
 	}
@@ -38,5 +38,3 @@ class Form extends Component {
 		);
 	}
 }
-
-export default Form;

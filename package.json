@@ -1,46 +1,45 @@
 {
-  "name": "preact-parcel-app",
-  "version": "1.0.0",
-  "description": "Preact + parcel",
-  "author": "Kamil Fleszar",
-  "scripts": {
-    "build": "parcel build ./index.html",
-    "start": "parcel ./index.html",
-    "lint": "eslint src",
-    "test": "jest"
-  },
-  "jest": {
-    "setupFiles": [
-      "./setupChai.js"
-    ],
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
-      "\\.(css|less)$": "identity-obj-proxy"
-    }
-  },
-  "dependencies": {
-    "preact": "^8.2.7",
-    "preact-prism": "^0.1.2"
-  },
-  "devDependencies": {
-    "babel-core": "^6.24.0",
-    "babel-eslint": "^8.2.2",
-    "babel-jest": "^20.0.0",
-	"babel-loader": "^7.0.0",
-	"babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-decorators-legacy": "^1.3.4",
-	"babel-plugin-transform-react-jsx": "^6.8.0",
-	"babel-polyfill": "^6.26.0",
-    "babel-preset-es2015": "^6.24.0",
-    "babel-preset-stage-0": "^6.5.0",
-    "chai": "^4.0.2",
-    "eslint": "^4.1.0",
-    "eslint-plugin-jest": "^21.7.1",
-    "eslint-plugin-react": "^7.0.0",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^20.0.0",
-    "parcel-bundler": "^1.3.1",
-    "preact-jsx-chai": "^2.2.1",
-    "preact-render-spy": "^1.2.2"
-  }
+	"name": "preact-parcel-app",
+	"version": "1.0.0",
+	"description": "Preact + parcel",
+	"author": "Kamil Fleszar",
+	"scripts": {
+		"start": "parcel ./index.html",
+		"lint": "eslint src",
+		"test": "jest"
+	},
+	"jest": {
+		"setupFiles": [
+			"./setupChai.js"
+		],
+		"moduleNameMapper": {
+			"\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+			"\\.(css|less)$": "identity-obj-proxy"
+		}
+	},
+	"dependencies": {
+		"preact": "^8.2.7",
+		"preact-prism": "^0.1.2"
+	},
+	"devDependencies": {
+		"babel-core": "^6.24.0",
+		"babel-eslint": "^8.2.2",
+		"babel-jest": "^20.0.0",
+		"babel-loader": "^7.0.0",
+		"babel-plugin-transform-class-properties": "^6.24.1",
+		"babel-plugin-transform-decorators-legacy": "^1.3.4",
+		"babel-plugin-transform-react-jsx": "^6.8.0",
+		"babel-polyfill": "^6.26.0",
+		"babel-preset-es2015": "^6.24.0",
+		"babel-preset-stage-0": "^6.5.0",
+		"chai": "^4.0.2",
+		"eslint": "^4.1.0",
+		"eslint-plugin-jest": "^21.7.1",
+		"eslint-plugin-react": "^7.0.0",
+		"identity-obj-proxy": "^3.0.0",
+		"jest": "^20.0.0",
+		"parcel-bundler": "^1.3.1",
+		"preact-jsx-chai": "^2.2.1",
+		"preact-render-spy": "^1.2.2"
+	}
 }
